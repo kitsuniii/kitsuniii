@@ -1,30 +1,120 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
-    <title>Kitsunii :3</title>
-    <style>       
-        <style>      
-
-                body {
-          background-image: url("https://lh3.googleusercontent.com/pw/ABLVV84MUDTzBpp4NzjycQHadv0W7JQp-o3LixBHP72PFnj_SsETyQUGctIXCPBwigHsX3jC-wl-lFYfN5o41BBYo5l-TwInKx5Ubvt-A4MCDAkrvRDXJR2EVNbunqfoTp09FQ2OCvSe3GGdZnxvs2npFiXExORGcMISRpmQciy5NsJJ0G-B5MWfj0m1hQl6Dh9GNokIg6EyT5AT965kl2FTazw4GNyzVMpXGiPynTeCvC8m799GCfWe2HJXLj-u6Je1G6_oy4QPH49Dgs0hF-l-f_gw1itdMCpnI8dsr2Hq751C2_akS6Ng46uGeEaQaATh11r3aZ216iQ6KjXLdI3SEgOCukc6XBuNAzuTnVkaPsKOU4sn6j0QJ0AXMgjetPHUpWnV5JMeXsPeyhsnyKgpIAI363nVDycdXOGHbNUgX9Q1-QyATr86dnw5I9H7vYVpf7U9t3gT1AWtD3iFwXhIkqhFlSYIXcGyZsCfmzO0mUrdfEu6QbercjxCDw4y-0wulXdpmsdJKNu3Ng_bMIk_dXkzTL8VrC1nMDtv0Z-M4nf9XEW_f7I0zkbZ-0n1SWhCozwMuC15I0NavMUC7sdLUVEddjjZsHxKqDWU9eNSw15C8iVQixBLYy4Jn6RUi-6Sv9P6LtSaPxPC_MNqYuR60fqtrywLw0O_itC7iO7SsysD1I9LL3GH7Njy8LnuwBZXRlU6kSrgCIF5t2-gysHIBEne1sRtJ6WpHjcL-DwB3GRo-K3_pzuF3NTdm5RG8yRVvM2uRl6jcasTeKIwcXmpdZM9UrvTp_WmoYXBEiW7WDE73wnNoBxYPyw1G78PgNi-DvoSVr848Z5Wr_lKPJriOLcyVmmgW9702GyP_Kpvmq49kUhro1u8ko9Ptpauoc1ZyCqEPr4RL5vHLx1aDLz_laC85qrQ_JlpTDrVdeI=w1182-h665-s-no?authuser=1");
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronikusu - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-      
-      </style>
-<br><br>
-  <h1 align="center">Hi, i'm Kitsunii/Ronikusu👋</h1><h1>
-      <h1 align="center">_____________</h1><h1>
-  </head>
-  <body>
-      <h1 align="center">notices!</h1><h1>
-      <h1 align="center">_____________</h1><h1>
-    <p align="center">Site is under construction! The layout might change over time!</p>
-  </body>
-  <a align="center" href="games.html">games!</a><br>
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 4em auto; /* Increased margin to avoid overlapping with fixed header */
+            padding: 1em;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 1em;
+        }
+
+        .want-one-button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none; /* Remove default link styling */
+            display: inline-block;
+        }
+
+        .want-one-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ronin "Ronikusu" Cowand</h1>
+        <p>Graphic design</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p> I am a Roblox GFX creator. I make thumbnails, profile pictures, banners, group icons, etc. examples of my work are below this section. <br> People that you might know that I have worked for! <br> Mal MM2 <br> briarisgucci</p>
+    </section>
+
+    <section>
+        <h2>Image Gallery</h2>
+
+        <div class="gallery">
+            <img src="profilepicture.jpg" alt="Profile picture example">
+            <img src="bannerexample.jpg" alt="Banner example">
+        </div>
+
+        <div class="button-container">
+            <a href="https://forms.gle/mqpnfhMbxbGgqhBV6" class="want-one-button">Want one?</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Contact: ronix5377@gmail.com | GitHub: Ronikusu / Kitsuniii (alt) | Roblox: RoniX537
   <a align="center" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF"></a><br>
 
 
