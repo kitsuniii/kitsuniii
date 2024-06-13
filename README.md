@@ -1,12 +1,9 @@
 - 👋 Hi, I’m @kitsuniii
-- I am @ronikusu's alt acc!<br>
+- I am @ronikusu's alt (now main) account!
 
- @ronikusu uses this account when:
--  whenever they are at school 
--  when they get locked out of their account (✨current)
--  the holder email of the account has gotten deleted (✨current)
--  whenever 2 step veriffication codes will not go through
--  turning on the proxy (see kitsuniii/proxy)
--  contributing to github (✨current)
+  
 <h1>Page views</h1>
-   <img src="https://profile-counter.glitch.me/kitsuniii/count.svg" />
+<h3>kitsuniii/kitsuniii (lets surpass my old account!)</h3>
+   <img src="https://profile-counter.glitch.me/kitsuniii/count.svg"/>
+<h3>ronikusu/ronikusu</h3>
+   <img src="https://profile-counter.glitch.me/ronikusu/count.svg"/>
