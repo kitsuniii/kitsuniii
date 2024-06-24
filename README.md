@@ -6,4 +6,4 @@
 <h3>kitsuniii/kitsuniii (lets surpass my old account!)</h3>
    <img src="https://profile-counter.glitch.me/kitsuniii/count.svg"/>
 <h3>ronikusu/ronikusu</h3>
-   <img src="https://profile-counter.glitch.me/ronikusu/count.svg"/>
+   2278 profile views.
