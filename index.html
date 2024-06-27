@@ -88,32 +88,40 @@
             transform: scale(1.1);
         }
 
-        .button-container {
-            text-align: center;
-            margin-top: 1em;
-        }
-
-        .want-one-button {
-            background-color: #274;
-            color: #fff;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .want-one-button:hover {
-            background-color: #555;
-        }
-
         footer {
             text-align: center;
             padding: 1em;
             background-color: rgba(51, 51, 100, 0.8);
             color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1em;
+            }
+
+            header p {
+                font-size: 0.8em;
+            }
+
+            section {
+                margin: 5em auto;
+                padding: 0.5em;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 8px;
+            }
         }
     </style>
 </head>
@@ -150,10 +158,11 @@
             <img src="Untitled design (3).png" alt="Wallpaper example">
             <img src="permafrost.png" alt="Wallpaper example">
         </div>
-
-        <div class="button-container">
-            <a href="https://forms.gle/mqpnfhMbxbGgqhBV6" class="want-one-button">Want one?</a>
-        </div>
+        <p>Want one? Scroll down!</p>
+    </section>
+    
+    <section>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCztvb6KRNUY-bsrtRKa-EMDM7hPZ6-hBlRlUJV2fcEcVAVg/viewform?embedded=true" width="640" height="671" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </section>
 
     <footer>
