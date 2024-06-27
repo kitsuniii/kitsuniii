@@ -5,8 +5,8 @@
      crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Roblox GFX creator. I can make profile pictures, wallpapers, banners, etc.">
-    <meta name="keywords" content="Ronikusu, portfolio, graphic design, Roblox, thumbnails, profile pictures, banners, GFX, roblox GFX">
+    <meta name="description" content="Ronikusu's portfolio showcasing graphic design work, including thumbnails, profile pictures, banners, and more for Roblox.">
+    <meta name="keywords" content="Ronikusu, portfolio, graphic design, Roblox, thumbnails, profile pictures, banners, GFX">
     <title>Ronikusu - Portfolio</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
@@ -17,9 +17,6 @@
             background-repeat: no-repeat;
             margin: 0;
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
 
         header {
@@ -50,9 +47,26 @@
         }
 
         header p {
+            display: inline;
             margin: 0;
             font-size: 0.9em;
             opacity: 0.8;
+        }
+
+        header nav {
+            margin-top: 0.5em;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1em;
+            opacity: 0.8;
+        }
+
+        header nav a:hover {
+            opacity: 1;
         }
 
         section {
@@ -62,7 +76,6 @@
             background-color: rgba(255, 255, 255, 0.9);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
-            text-align: center;
         }
 
         h1, h2 {
@@ -78,7 +91,6 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 16px;
-            justify-content: center;
         }
 
         .gallery img {
@@ -119,37 +131,6 @@
             padding: 1em;
             background-color: rgba(51, 51, 100, 0.8);
             color: white;
-            width: 100%;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1em;
-            }
-
-            header p {
-                font-size: 0.8em;
-            }
-
-            section {
-                margin: 5em auto;
-                padding: 0.5em;
-            }
-
-            .gallery {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-                gap: 8px;
-            }
         }
     </style>
 </head>
@@ -159,9 +140,14 @@
         <img src="header.jpg" alt="Ronikusu">
         <h1>Ronikusu</h1>
         <p>Graphic design</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#gallery">Image Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <section>
+    <section id="about">
         <h2>About Me</h2>
         <p>I am a Roblox GFX creator. I make thumbnails, profile pictures, banners, group icons, etc. Examples of my work are at the bottom of this page.</p>
         <h2>People that you might know that I have worked for!</h2>
@@ -172,7 +158,7 @@
         </ul>
     </section>
 
-    <section>
+    <section id="gallery">
         <h2>Image Gallery</h2>
 
         <div class="gallery">
@@ -186,16 +172,23 @@
             <img src="Untitled design (3).png" alt="Wallpaper example">
             <img src="permafrost.png" alt="Wallpaper example">
         </div>
-        <p>Want one? Scroll down!</p>
+
+        <div class="button-container">
+            <a href="https://forms.gle/mqpnfhMbxbGgqhBV6" class="want-one-button">Want one?</a>
+        </div>
     </section>
-    
-    <section>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCztvb6KRNUY-bsrtRKa-EMDM7hPZ6-hBlRlUJV2fcEcVAVg/viewform?embedded=true" width="640" height="671" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to work with me, feel free to contact me.</p>
+        <p>Email: ironikusu@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/Ronikusu">Ronikusu (ded account)</a> / <a href="https://github.com/Kitsuniii">Kitsuniii</a></p>
+        <p>Roblox: RoniX537</p>
     </section>
 
     <footer>
         <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/cinni_button.2.png"></a>
-        <p>Contact: ronix5377@gmail.com | GitHub: Ronikusu / Kitsuniii (alt) | Roblox: RoniX537</p>
+        <p>Contact: ironikusu@gmail.com | GitHub: <a href="https://github.com/Ronikusu">Ronikusu</a> / <a href="https://github.com/Kitsuniii">Kitsuniii (alt)</a> | Roblox: RoniX537</p>
         <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF"></a>
     </footer>
 
@@ -209,3 +202,4 @@
     </script>
 </body>
 </html>
+
