@@ -55,6 +55,33 @@
         height: auto;
     }
 
+    #suggestion-form {
+        margin-top: 10px;
+    }
+
+    #suggestion {
+       width: 100%;
+       padding: 10px;
+       border-radius: 5px;
+       border: 1px solid #ccc;
+       resize: none;
+    }
+
+    button {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #2C7A79;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    button:hover {
+    background-color: #164B4B ;
+    }
+
+
     header img {
         width: 30px;
         height: auto;
@@ -180,18 +207,27 @@
     <main>
 <section id="about">
 
-    <div class="pet-box">
-        <h3>TamaNOTchi!</h3>
-        <a href="https://tamanotchi.world/15290c">
-            <img src="https://tamanotchi.world/i/15290" alt="It's tamaNOTchi! Click to feed!">
-        </a>
-    </div>
+<div class="pet-box">
+    <h3>TamaNOTchi!</h3>
+    <a href="https://tamanotchi.world/15290c">
+        <img src="https://tamanotchi.world/i/15290" alt="It's tamaNOTchi! Click to feed!"></a>
+        <p>-----------------------</p>
+        <h3>Open for suggestions! :D</h3>
+    
+    <form id="suggestion-form" action="submit_suggestion.php" method="post">
+        <label for="suggestion">Your Suggestion:</label>
+        <textarea id="suggestion" name="suggestion" rows="3" placeholder="I think that this site needs..." required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
     <h1>SITE UNDER CONSTRUCTION!!<h1>
+        <p>site version 0.6.1</p>
     <h2>About Me</h2>
-    <p>Hi! I am Ronikusu, but you can call me Rayne! I am into web design, tinkering with old tech, and playing Splatoon! :D</p>
+    <p>Hi! I am Ronikusu, but you can call me Rayne!<br> I am into:<br>- web design<br>- tinkering with old tech<br>- playing Splatoon! :D</p>
     
     
-    <p>Rayne's current mood:</p>
+    <p>Rayne's current Imood:</p>
     <a href="https://www.imood.com/users/Ronikusu">
         <img src="https://moods.imood.com/display/uname-Ronikusu/trans-1/imood.gif" alt="Current mood of Ronikusu: demure!">
     </a>
@@ -201,7 +237,7 @@
         <section id="contact">
             <h2>Contact Me</h2>
             <p>If you have any questions or would like to work with me, feel free to contact me.</p>
-            <p>Email (work inquiries only): <a href="mailto:ironikusu@gmail.com">ironikusu@gmail.com</a></p>
+            <p>Email (work inquiries only, personal email): <a href="mailto:ironikusu@gmail.com">ironikusu@gmail.com</a></p>
             <p>GitHub: <a href="https://github.com/Kitsuniii" target="_blank" rel="noopener noreferrer">Kitsuniii</a></p>
             <p>Roblox: OCCULTHUMAN</p>
         </section>
@@ -209,7 +245,7 @@
 
     <footer>
         <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/cinni_button.2.png"></a>
-        <p>Contact: <a href="mailto:ironikusu@gmail.com">ironikusu@gmail.com</a> | GitHub: <a href="https://github.com/Ronikusu" target="_blank" rel="noopener noreferrer">Ronikusu</a> / <a href="https://github.com/Kitsuniii" target="_blank" rel="noopener noreferrer">Kitsuniii (main)</a> | Roblox: OCCULTHUMAN</p>
+        <p>Contact: <a href="mailto:ironikusu@gmail.com">ironikusu@gmail.com</a> | GitHub: <a href="https://github.com/Kitsuniii" target="_blank" rel="noopener noreferrer">Kitsuniii</a> | Roblox: OCCULTHUMAN</p>
     </footer>
 
     <!-- Google Analytics -->
