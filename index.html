@@ -1,216 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5281577509219940" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ronikusu's portfolio showcasing graphic design work, including thumbnails, profile pictures, banners, and more for Roblox.">
     <meta name="keywords" content="Ronikusu, portfolio, graphic design, Roblox, thumbnails, profile pictures, banners, GFX">
-    <title>Ronikusu - About Me!</title>
+    <title>Ronikusu - about me!</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5281577509219940" crossorigin="anonymous"></script>
-    <style>
-        :root {
-            --background-light: rgba(255, 255, 255, 0.9);
-            --background-dark: rgba(51, 51, 51, 0.9);
-            --text-light: #333;
-            --text-dark: #ccc;
-            --header-background: rgba(51, 51, 100, 0.7);
-            --footer-background: rgba(51, 51, 100, 0.8);
-        }
+<style>
+    :root {
+        --background-light: rgba(255, 255, 255, 0.9);
+        --background-dark: rgba(51, 51, 51, 0.9);
+        --text-light: #333;
+        --text-dark: #ccc;
+        --header-background: rgba(51, 51, 100, 0.7);
+        --footer-background: rgba(51, 51, 100, 0.8);
+    }
 
+    body {
+        background-image: url('PermaFrost.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: var(--text-light);
+    }
+
+    header {
+        background-color: var(--header-background);
+        color: white;
+        text-align: center;
+        padding: 0.5em 1em;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .pet-box {
+        float: right;
+        width: 250px;
+        margin-left: 20px;
+        padding: 1em;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .pet-box img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #suggestion-form {
+        margin-top: 10px;
+    }
+
+    #suggestion {
+       width: 100%;
+       padding: 10px;
+       border-radius: 5px;
+       border: 1px solid #ccc;
+       resize: none;
+    }
+
+    button {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #2C7A79;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    button:hover {
+    background-color: #164B4B ;
+    }
+
+
+    header img {
+        width: 30px;
+        height: auto;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    header h1 {
+        display: inline;
+        font-size: 1.5em;
+        margin: 0;
+        vertical-align: middle;
+    }
+
+    header p {
+        display: inline;
+        margin: 0;
+        font-size: 0.9em;
+        opacity: 0.8;
+    }
+
+    header nav {
+        margin-top: 0.5em;
+    }
+
+    header nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 1em;
+        opacity: 0.8;
+        transition: opacity 0.3s;
+    }
+
+    header nav a:hover {
+        opacity: 1;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 7em auto;
+        padding: 1em;
+        background-color: var(--background-light);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+    }
+
+    h1, h2 {
+        color: var(--text-light);
+    }
+
+    p {
+        line-height: 1.6;
+        color: #666;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1em;
+        background-color: var(--footer-background);
+        color: white;
+    }
+
+    @media (prefers-color-scheme: dark) {
         body {
-            background-image: url('PermaFrost.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: var(--text-light);
+            color: var(--text-dark);
+            background-color: #000; /* Optional: change background for dark mode */
         }
 
         header {
             background-color: var(--header-background);
-            color: white;
-            text-align: center;
-            padding: 0.5em 1em;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: var(--text-dark);
         }
 
         .pet-box {
-            float: right;
-            width: 250px;
-            margin-left: 20px;
-            padding: 1em;
-            background-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        .pet-box img {
-            max-width: 100%;
-            height: auto;
+            background-color: rgba(50, 50, 50, 0.9);
         }
 
         main {
-            max-width: 1000px;
-            margin: 7em auto;
-            padding: 1em;
-            background-color: var(--background-light);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
+            background-color: var(--background-dark);
         }
 
-        h1, h2 {
-            color: var(--text-light);
-        }
-
-        p {
-            line-height: 1.6;
-            color: #666;
+        h1, h2, p {
+            color: var(--text-dark);
         }
 
         footer {
-            text-align: center;
-            padding: 1em;
             background-color: var(--footer-background);
-            color: white;
+            color: var(--text-dark);
         }
+    }
 
-        @media (prefers-color-scheme: dark) {
-            body {
-                color: var(--text-dark);
-                background-color: #000;
-            }
-
-            header {
-                background-color: var(--header-background);
-                color: var(--text-dark);
-            }
-
-            .pet-box {
-                background-color: rgba(50, 50, 50, 0.9);
-            }
-
-            main {
-                background-color: var(--background-dark);
-            }
-
-            h1, h2, p {
-                color: var(--text-dark);
-            }
-
-            footer {
-                background-color: var(--footer-background);
-                color: var(--text-dark);
-            }
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 1.2em;
         }
-
-        /* Mobile styles */
-        @media (max-width: 600px) {
-            header {
-                padding: 1em;
-            }
-
-            header h1 {
-                font-size: 1.5em;
-            }
-
-            header nav {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            header nav a {
-                margin: 10px 0;
-                font-size: 1.2em;
-            }
-
-            main {
-                margin: 5em auto;
-                padding: 0.5em;
-                border-radius: 10px;
-            }
-
-            .pet-box {
-                float: none;
-                width: 90%;
-                margin: 0 auto 20px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-
-            p {
-                font-size: 1em;
-            }
-
-            footer {
-                font-size: 0.9em;
-            }
+        header nav a {
+            margin: 0 10px;
+            font-size: 0.9em;
         }
-    </style>
+        main {
+            margin: 5em auto;
+            padding: 0.5em;
+        }
+    }
+</style>
 </head>
 <body>
 
-<header>
-    <img src="header.jpg" alt="Rayne's profile picture" style="width: 100%; height: auto; max-height: 200px; object-fit: cover;">
-    <h1>Ronikusu</h1>
-    <p>Graphic Design</p>
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="https://kitsuniii.github.io/kitsuniii/portfolio.html">Gallery</a>
-        <a href="#contact">Contact</a>
-        <a href="https://kitsuniii.github.io/kitsuniii/blog.html" target="_blank" rel="noopener noreferrer">Blog!</a>
-    </nav>
-</header>
-
+    <header>
+        <img src="header.jpg" alt="Rayne's profile picture">
+        <h1>Ronikusu</h1>
+        <p>Graphic Design</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="https://kitsuniii.github.io/kitsuniii/portfolio.html">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="https://kitsuniii.github.io/kitsuniii/blog.html" target="_blank" rel="noopener noreferrer">Blog!</a>
+        </nav>
+    </header>
 
     <main>
-        <section id="about">
-            <div class="pet-box">
-                <h3>TamaNOTchi!</h3>
-                <a href="https://tamanotchi.world/15290">
-                    <img src="https://tamanotchi.world/i/15290" alt="It's tamaNOTchi! Click to feed!"></a>
-                <p>-----------------------</p>
-                <h3>Open for Suggestions!</h3>
-                <p>Contact: <a href="https://freesuggestionbox.com/pub/vzglwok">click here!</a></p>
-            </div>
+<section id="about">
 
-            <h1>SITE UNDER CONSTRUCTION!!</h1>
-            <p>Site version 0.6.1</p>
-            <h2>About Me</h2>
-            <p>Hi! I am Ronikusu, but you can call me Rayne!<br> I am into:<br>- Web design<br>- Tinkering with old tech<br>- Playing Splatoon! :D</p>
-            
-            <p>Rayne's current mood:</p>
-            <a href="https://www.imood.com/users/Ronikusu">
-                <img src="https://moods.imood.com/display/uname-Ronikusu/trans-1/imood.gif" alt="Current mood of Ronikusu: demure!">
-            </a>
-        </section>
+<div class="pet-box">
+    <h3>TamaNOTchi!</h3>
+    <a href="https://tamanotchi.world/15290c">
+        <img src="https://tamanotchi.world/i/15290" alt="It's tamaNOTchi! Click to feed!"></a>
+        <p>-----------------------</p>
+        <h3>Open for suggestions!</h3>
+      <p>Contact: <a href="https://freesuggestionbox.com/pub/vzglwok">click here!</a></p>
+</div>
+
+    <h1>SITE UNDER CONSTRUCTION!!<h1>
+        <p>site version 0.6.1</p>
+    <h2>About Me</h2>
+    <p>Hi! I am Ronikusu, but you can call me Rayne!<br> I am into:<br>- web design<br>- tinkering with old tech<br>- playing Splatoon! :D</p>
+    
+    
+    <p>Rayne's current Imood:</p>
+    <a href="https://www.imood.com/users/Ronikusu">
+        <img src="https://moods.imood.com/display/uname-Ronikusu/trans-1/imood.gif" alt="Current mood of Ronikusu: demure!">
+    </a>
+</section>
+
 
         <section id="contact">
             <h2>Contact Me</h2>
             <p>If you have any questions or would like to work with me, feel free to contact me.</p>
-            <p>Email (work inquiries only): <a href="mailto:ironikusu@gmail.com">ironikusu@gmail.com</a></p>
+            <p>Email (work inquiries only, personal email): <a href="mailto:ironikusu@gmail.com">ironikusu@gmail.com</a></p>
             <p>GitHub: <a href="https://github.com/Kitsuniii" target="_blank" rel="noopener noreferrer">Kitsuniii</a></p>
-            <p>Roblox: <strong>OCCULTHUMAN</strong></p>
+            <p>Roblox: OCCULTHUMAN</p>
         </section>
     </main>
 
     <footer>
-        <a target="_blank" href="https://melonking.net">
-            <img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/cinni_button.2.png">
-        </a>
-        <p>Contact: <a href="mailto:ironikusu@gmail.com">ironikusu@gmail.com</a> | GitHub: <a href="https://github.com/Kitsuniii" target="_blank" rel="noopener noreferrer">Kitsuniii</a> | Roblox: <strong>OCCULTHUMAN</strong></p>
+        <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/cinni_button.2.png"></a>
+        <p>Contact: <a href="mailto:ironikusu@gmail.com">ironikusu@gmail.com</a> | GitHub: <a href="https://github.com/Kitsuniii" target="_blank" rel="noopener noreferrer">Kitsuniii</a> | Roblox: OCCULTHUMAN</p>
     </footer>
 
     <!-- Google Analytics -->
