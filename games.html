@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5281577509219940" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ronikusu's portfolio showcasing graphic design work, including thumbnails, profile pictures, banners, and more for Roblox.">
+    <meta name="keywords" content="Ronikusu, portfolio, graphic design, Roblox, thumbnails, profile pictures, banners, GFX">
     <title>Ronikusu - Portfolio</title>
-    <meta name="google-adsense-account" content="ca-pub-5281577509219940">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <style>
+        :root {
+            --background-light: rgba(255, 255, 255, 0.9);
+            --background-dark: rgba(51, 51, 51, 0.9);
+            --text-light: #333;
+            --text-dark: #ccc;
+            --header-background: rgba(51, 51, 100, 0.7);
+            --footer-background: rgba(51, 51, 100, 0.8);
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            background-image: url('cinna.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             margin: 0;
-            padding: 0;
-            background: url('cinna.jpg') center/cover repeat;
+            font-family: Arial, sans-serif;
+            color: var(--text-light);
         }
 
         header {
-            background-color: rgba(51, 51, 100, 0.8);
+            background-color: var(--header-background);
             color: white;
             text-align: center;
             padding: 0.5em;
@@ -22,30 +38,32 @@
             width: 100%;
             top: 0;
             z-index: 1000;
-            margin-bottom: 60px; /* Add margin to the bottom of the header */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         header img {
-            width: 40px; /* Set the width of the image as needed */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 50%; /* Optional: Apply border-radius for a circular image */
+            width: 40px;
+            height: auto;
+            border-radius: 50%;
         }
 
         header h1 {
-            margin-bottom: 0.2em; /* Adjust spacing between image and heading */
-            font-size: 1.5em; /* Adjust font size */
+            display: inline;
+            font-size: 1.5em;
+            margin: 0;
         }
 
         section {
             max-width: 1000px;
             margin: 7em auto;
             padding: 1em;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: var(--background-light);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
         }
 
         h1, h2 {
-            color: #333;
+            color: var(--text-light);
         }
 
         p {
@@ -53,50 +71,22 @@
             color: #666;
         }
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 16px;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.1);
-        }
-
-        .button-container {
-            text-align: center;
-            margin-top: 1em;
-        }
-
-        .want-one-button {
-            background-color: #274;
-            color: bubblegum;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .want-one-button:hover {
-            background-color: #555;
-        }
-
         footer {
             text-align: center;
             padding: 1em;
-            background-color: rgba(51, 51, 100, 0.8);
+            background-color: var(--footer-background);
             color: white;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.2em;
+            }
+
+            section {
+                margin: 5em auto;
+                padding: 0.5em;
+            }
         }
     </style>
 </head>
@@ -106,18 +96,30 @@
         <img src="header.jpg" alt="Ronikusu">
         <h1>Ronikusu</h1>
         <p>Graphic design</p>
+        <nav>
+            <a href="#about" style="color: white;">About Me</a>
+            <a href="https://kitsuniii.github.io/kitsuniii/portfolio.html" style="color: white;">Gallery</a>
+            <a href="#contact" style="color: white;">Contact</a>
+            <a href="https://kitsuniii.github.io/kitsuniii/blog.html" target="_blank" rel="noopener noreferrer" style="color: white;">Blog!</a>
+        </nav>
     </header>
 
-  <section>
-    <h2>Games</h2>
-    <p>Visit the person that created the following game by clicking the button below:</p>
-    <a align="center" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF"></a>
-    <h3>Gifypet</h3>
-    <p>Gifypet is a virtual pet by Melonking, a person that uses his free time to create open source games.</p>
-<iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=pooki <3&dob=1710878255&gender=b&element=Air&pet=https%3A%2F%2Fgifypet.neocities.org%2Fimages%2Fkitty.gif&map=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTfCRv6txGJCYJyUJYjQkTJYOojY6ZolmVOW0J-gnAYDj_UFNzbjrfcWH_YHu0VQIM5w1s%26usqp%3DCAU&background=paper.jpg&tablecolor=%23c43b76&textcolor=%239c266b" frameborder="0"></iframe>  </section>
+    <section id="about">
+        <h2>Games</h2>
+        <h3>Gifypet</h3>
+        <p>Gifypet is a virtual pet by Melonking!</p>
+        <iframe width="314" height="321" scrolling="no" src="https://gifypet.neocities.org/pet/pet.html?name=pooki <3&dob=1710878255&gender=b&element=Air&pet=https%3A%2F%2Fgifypet.neocities.org%2Fimages%2Fkitty.gif&map=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcTfCRv6txGJCYJyUJYjQkTJYOojY6ZolmVOW0J-gnAYDj_UFNzbjrfcWH_YHu0VQIM5w1s%26usqp%3DCAU&background=paper.jpg&tablecolor=%23c43b76&textcolor=%239c266b" frameborder="0"></iframe>
+        <p>Visit the person that created the following game by pressing the badge below.</p>
+        <a target="_blank" href="https://melonking.net">
+        <img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF">
+        </a>
+    </section>
 
-
-      <footer>
-        <a align="center" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/cinni_button.2.png"></a> <a align="center" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF"></a><br>
-        <p>Contact: ronix5377@gmail.com | GitHub: Ronikusu / Kitsuniii (alt) | Roblox: RoniX537
-            
+    <footer>
+        <a target="_blank" href="https://melonking.net">
+            <img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/cinni_button.2.png">
+        </a>
+        <p>Contact: <a href="mailto:ronix5377@gmail.com">ronix5377@gmail.com</a> | GitHub: <a href="https://github.com/Kitsuniii" target="_blank" rel="noopener noreferrer">Ronikusu</a> | Roblox: RoniX537</p>
+    </footer>
+</body>
+</html>
