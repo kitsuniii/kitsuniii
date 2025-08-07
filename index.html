@@ -32,29 +32,11 @@
   </div>
 
   <script>
-    // Remove right image on mobile
-    function isMobile() {
-      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i
-        .test(navigator.userAgent) || window.innerWidth <= 768;
-    }
-
-    if (isMobile()) {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i
+        .test(navigator.userAgent) || window.innerWidth <= 768) {
       const right = document.getElementById("rightImage");
       if (right) right.remove();
     }
-
-    // Page transition effect thingy
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const wrapper = document.getElementById('page-transition-wrapper');
-        wrapper.classList.remove('page-enter');
-        wrapper.classList.add('page-exit');
-        wrapper.addEventListener('animationend', () => {
-          window.location.href = this.href;
-        }, { once: true });
-      });
-    });
   </script>
 </body>
 </html>
