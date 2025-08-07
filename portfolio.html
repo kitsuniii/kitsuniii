@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Under construction | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="left">
+    <div class="logo">Ronyn's personal homepage! :D</div>
+    
+    <div class="logo">Toro's World</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="content">
+      <p>This website is under <strong>heavy construction</strong>, please do be aware that this is only the base of the portfolio and is subject to change.</p>
+    </div>
+
+    <footer>
+      © 2025 | All trademarks, artwork, and associated imagery are contrary to their respective owners.
+    </footer>
+  </div>
+
+  <div class="right" id="rightImage">
+    <img src="https://brokenonpurposee" alt="Img" />
+  </div>
+
+  <script>
+    // remove large image for phone and tablet users
+    function isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i
+        .test(navigator.userAgent) || window.innerWidth <= 768;
+    }
+
+    if (isMobile()) {
+      const right = document.getElementById("rightImage");
+      if (right) right.remove();
+    }
+  </script>
+</body>
+</html>
